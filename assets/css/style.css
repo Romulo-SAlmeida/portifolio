@@ -10,8 +10,8 @@
 
 :root {
   --hue: 90;
-  --primary-color: hsl(var(--hue), 92%, 43%);
-  --primary-hover: hsl(var(--hue), 92%, 33%);
+  --primary-color: yellow;
+  --primary-hover: gold;
   --secundary-color: hsl(0, 0%, 5%);
   --third-color: hsla(0, 0%, 100%, 0.1);
   --bg-color: hsl(0, 0%, 8%);
@@ -509,7 +509,7 @@ body.menu-expanded button path {
   width: 38rem;
 
   border-radius: 2rem;
-  box-shadow: 0 0 2rem green;
+  box-shadow: 0 0 2rem goldenrod;
 
   transition: 600ms;
 }
@@ -693,7 +693,7 @@ body.menu-expanded button path {
   background: var(--secundary-color);
 
   border-radius: 0.6rem;
-  box-shadow: -1rem 1rem 1rem green;
+  box-shadow: -1rem 1rem 1rem goldenrod;
 
   transition: 400ms;
 }
@@ -809,9 +809,8 @@ body.menu-expanded button path {
   border-radius: 100%;
 }
 
-body.light-mode #contact .col-b::after {
-  background-color: grey;
-}
+
+
 
 
 /*------------------FOOTER(Roda-pé)-----------------------------*/
