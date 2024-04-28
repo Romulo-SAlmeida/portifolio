@@ -384,7 +384,7 @@ body.menu-expanded button path {
   position: relative;
 }
 
-#home h1 {
+#home h2 {
   font-size: 4.5rem;
   color: var(--headline);
   line-height: 110%;
@@ -518,6 +518,9 @@ body.menu-expanded button path {
 
 #projects {
   background-color: var(--secundary-color);
+}
+#projects h1{
+  color: #fff;
 }
 /*---------------- Projetos ----------------
 
