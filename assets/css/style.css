@@ -57,9 +57,9 @@ body {
 }
 
 .wrapper {
-  width: min(50rem, 100%);
+  width: min(50rem, 150%);
   
-  margin-inline: auto;
+  margin-inline:auto;
   padding-inline: 3.4rem;
 }
 
@@ -153,9 +153,7 @@ section span {
   cursor: pointer;
 }
 
-body.light-mode .button:hover {
-  filter: none;
-}
+
 
 /*---------------------------- SOCIAL LINKS ----------------------------*/
 
@@ -245,13 +243,16 @@ nav .wrapper {
   justify-content: space-between;
 }
 
+nav.scroll {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+}
+
 /*----------------------LOGO------------------------ */
 
 /* Estilos do menu de navegação */
-#navigation {
-  background-color: rgba(0, 0, 0, 0.267);
-  padding: 10px 0;
-}
+
 
 a.logo {
   font-family: "Gemunu Libre", sans-serif;
@@ -268,6 +269,26 @@ nav#navigation.scroll a.logo,
 body.menu-expanded nav#navigation a.logo,
 body.light-mode.menu-expanded nav#navigation.scroll a.logo {
   color: #fff;
+}
+
+/* == Responsividade head == */
+body.menu-expanded nav#navigation a.logo {
+  opacity: 1;
+}
+
+nav#navigation .menu ul li a {
+  color: #fff;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav .menu,
+nav .close-menu {
+  position: fixed;
 }
 
 /*------------------Menu-expan ------------------------------*/
@@ -436,6 +457,30 @@ body.menu-expanded button path {
   }
 }
 
+#home .wrapper::before {
+  content: "";
+  display: block;
+
+  width: 27rem;
+  height: 27rem;
+
+  background-color: var(--primary-color);
+  border-radius: 100%;
+
+  position: absolute;
+  bottom: -3.1rem;
+  z-index: -1;
+
+  animation: appear 1s 500ms backwards;
+}
+
+#home img {
+  width: 30rem;
+  min-width: 14.5rem;
+  display: block;
+  margin-inline: auto;
+  filter: contrast(1.2);
+}
 /*===== ABOUT =================================================*/
 
 #about {
@@ -469,11 +514,13 @@ body.menu-expanded button path {
   transition: 600ms;
 }
 
-/*---------------- Projetos -----------------*/
+
 
 #projects {
   background-color: var(--secundary-color);
 }
+/*---------------- Projetos ----------------
+
 
 #projects header {
   margin-bottom: 6rem;
@@ -626,7 +673,7 @@ body.menu-expanded button path {
 #projects .button {
   margin: 6rem auto 0;
 }
-
+--*/
 /*---------------------------KNOWLEDGE------------------*/
 
 #knowledge header h2 {
